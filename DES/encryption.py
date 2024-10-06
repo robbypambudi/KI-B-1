@@ -1,6 +1,6 @@
 
-from helper import str_to_bin, generate_round_keys, ip_on_binary_rep, binary_to_ascii
-from key import e_box_table, s_boxes, p_box_table, ip_inverse_table
+from .helper import str_to_bin, ip_on_binary_rep, binary_to_ascii
+from .key import e_box_table, s_boxes, p_box_table, ip_inverse_table, generate_round_keys
 
 def encryption(user_input):
   binary_rep_of_input = str_to_bin(user_input)

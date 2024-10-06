@@ -1,5 +1,5 @@
 # importfrom files key.py
-from key import ip_table
+from .key import ip_table
 
 """
 Function for the conversion of string to binary of 64 bits:

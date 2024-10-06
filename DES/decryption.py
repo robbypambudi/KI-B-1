@@ -1,6 +1,6 @@
 
-from key import e_box_table, s_boxes, p_box_table, ip_inverse_table, generate_round_keys
-from helper import ip_on_binary_rep, binary_to_ascii
+from .key import e_box_table, s_boxes, p_box_table, ip_inverse_table, generate_round_keys
+from .helper import ip_on_binary_rep, binary_to_ascii
 
 def decryption(final_cipher):
   # Initialize lists to store round keys

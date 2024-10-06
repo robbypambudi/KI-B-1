@@ -1,6 +1,6 @@
-from decryption import decryption
-from encryption import encryption
-from helper import str_to_bin
+from .decryption import decryption
+from .encryption import encryption
+from .helper import str_to_bin
 
 class DES:
     def __init__(self, key):
@@ -8,9 +8,9 @@ class DES:
         
 
     def encrypt(self, plaintext):
-        enc = decryption(plaintext)
+        enc = encryption(plaintext)
         # Save the encrypted text to a file
-        with open('encrypted.txt', 'w') as f:
+        with open('encrypted.txt', 'w', encoding='utf-8') as f:
             f.write(enc)
         return enc
 
